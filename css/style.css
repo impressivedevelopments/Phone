@@ -18,27 +18,34 @@ ul { list-style: none; }
 .wrapper { width: 1200px; margin: 0 auto; }
 
 /*Навигация*/
-.main-nav { align-items: center; align-content: space-around; }
+.main-nav { align-items: center; justify-content: space-around; }
 .nav li { margin: 0 15px; }
 .nav li a { color: var(--safont-c); }
 
 /*Кнопки*/
 .btn {
     background: transparent;
-    padding: 10px 15px;
     border-radius: 70px;
     border: 1px solid transparent;
     line-height: 0;
-    text-align: center;
-    text-transform: uppercase;
+    text-align: center;    
 }
-.lg-btn { width: 250px; height: 50px; font-size: 18px; }
+.lg-btn { width: 250px; height: 50px; }
 .md-btn { width: 225px; height: 45px; }
-.sm-btn { width: 200px; height: 50px; }
+.sm-btn { width: 300px; height: 30px; }
 .main-btn {
     background: var(--mbbg-c);
-    border: var(--mbbg-c);
+    border-color: var(--mbbg-c);
     color: var(--safont-c);
+    padding: 25px 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.link-btn { 
+    border-color: var(--mbbg-c); 
+    color: var(--mbbg-c);
+    padding: 12px 40px;
+    font-size: 15px;
 }
 .get-skype {
     align-items: center;
