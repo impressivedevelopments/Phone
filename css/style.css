@@ -2,68 +2,78 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
-a
-{
-    text-decoration: none;
-}
-.flex
-{
-    display: flex;
-}
-.wrapper {
-    width: 1200px;
-    margin: 0 auto;
-}
+a { text-decoration: none; }
+.flex { display: flex; }
+.wrapper { width: 1200px; margin: 0 auto; }
 
 /*Кнопки*/
 .btn {
     background: transparent;
     padding: 10px;
-    border-radius: 50%;
-    border-width: 1px solid transparent;
-    line-height: 1.475;
+    border-radius: 70px;
+    border: 1px solid transparent;
     text-align: center;
     vertical-align: middle;
-    text-decoration: none;
+    text-transform: uppercase;
 }
 .lg-btn {
-    width: 100px;
-    height: 50px;
+  
 }
 .md-btn {
 
 }
 .sm-btn {
-    width: 200px;
-    height: 50px;
+
+
 }
 .main-btn {
     background: var(--mbbg-c);
 }
-.get-skype
-{
+
+/* FOOTER */
+.get-skype {
+    padding-top: 75px;
     align-items: center;
     flex-direction: column;
-    padding-top: 75px;
-    padding-bottom: 150px;
     color: var(--safont-c);
     position: relative;
     z-index: 1;
 }
-.opacity
-{
+.get-skype span {
+    font-size: 17px;
+}
+.opacity {
     position: absolute;
     top:0;
     width:100%;
     height: 100%;
-    background: #000;
-    opacity: 0.37;
+    opacity: 0.68;
     z-index: -1;
 }
-.get-skype .lg-btn
-{
+.download {
+    width:258px;
+    padding: 20px 20px;
+    font-size: 15px;
+    color: var(--safont-c);
+    background: var(--mbbg-c);
+    margin-top: 28px;
+    margin-bottom: 60px;
+}
+.footer-container {
 
-    padding-top: 28px;
+    font-size: 13px;
+    align-content: space-around;
+}
+.privacy {
+    margin-top: 45px;
+    width:649px;
+}
+.copyright {
+    margin-top: 35px;
+    align-items: flex-end;
+    flex-direction: column;
+    width:199px;
 }
 
