@@ -6,3 +6,6 @@ body {
     height: 100px;
     background: #fff;
 }
+.block > p {
+    font-size: 28px;
+}
