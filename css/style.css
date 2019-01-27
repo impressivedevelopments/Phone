@@ -4,8 +4,10 @@
     box-sizing: border-box;
     font-family: 'Open Sans', Helvetica, sans-serif;
 }
+
 a { text-decoration: none; }
 ul { list-style: none; }
+
 .flex { display: flex; }
 .wrapper { width: 1200px; margin: 0 auto; }
 
@@ -16,9 +18,28 @@ header {
     position: relative;
     z-index: 1;
 }
+.title {
+    color: var(--safont-c);
+    padding: 150px 0 50px 0;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.title span { font-size: 34px; margin: 0 0 50px 0;}
+.icons { 
+    width: 200px;
+    margin: 50px auto 0;
+    font-size: 17px; 
+    align-items: center; 
+    justify-content: space-between;
+}
+.social p { font-size: 12px; }
 
 /* NAVIGATION */
-.main-nav { font-size: 17px; align-items: center; justify-content: space-around; }
+.main-nav { 
+    font-size: 17px; 
+    align-items: center; 
+    justify-content: space-around; }
 .nav li { margin: 0 15px; }
 .nav li a { color: var(--safont-c); }
 
@@ -38,6 +59,16 @@ header {
     border-color: var(--mbbg-c);
     color: var(--mbbg-c);
 }
+.download {
+    width: 220px;
+    padding: 20px 0;
+    font-size: 16px;
+    color: var(--safont-c);
+    background: var(--mbbg-c);
+    margin-top: 28px;
+    margin-bottom: 60px;
+    text-transform: uppercase
+}
 
 /* MORE FEAUTERS */
 
@@ -55,6 +86,9 @@ header {
 .get-skype span {
     font-size: 17px;
 }
+.get-skype .lg-btn {
+    padding-top: 28px;
+}
 .opacity {
     position: absolute;
     top:0;
@@ -63,17 +97,7 @@ header {
     opacity: 0.68;
     z-index: -1;
 }
-.download {
-    width:258px;
-    padding: 20px 20px;
-    font-size: 15px;
-    color: var(--safont-c);
-    background: var(--mbbg-c);
-    margin-top: 28px;
-    margin-bottom: 60px;
-}
 .footer-container {
-
     font-size: 13px;
     justify-content: space-around;
 }
@@ -90,7 +114,3 @@ header {
     opacity: 0.75;
     z-index: -1;
 }
-.get-skype .lg-btn {
-    padding-top: 28px;
-}
-
