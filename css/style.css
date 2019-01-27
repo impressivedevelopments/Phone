@@ -4,25 +4,24 @@
     box-sizing: border-box;
     font-family: 'Open Sans', Helvetica, sans-serif;
 }
-
+a { text-decoration: none; }
+ul { list-style: none; }
+.flex { display: flex; }
+.wrapper { width: 1200px; margin: 0 auto; }
+/* HEADER */
 header {
     height: 800px;
     padding-top: 50px;
     position: relative;
     z-index: 1;
 }
-a { text-decoration: none; }
-ul { list-style: none; }
 
-.flex { display: flex; }
-.wrapper { width: 1200px; margin: 0 auto; }
-
-/*Навигация*/
+/* NAVIGATION */
 .main-nav { font-size: 17px; align-items: center; justify-content: space-around; }
 .nav li { margin: 0 15px; }
 .nav li a { color: var(--safont-c); }
 
-/*Кнопки*/
+/* BUTTONS */
 .btn {
     background: transparent;
     padding: 10px 15px;
@@ -40,6 +39,10 @@ ul { list-style: none; }
     border-color: var(--mbbg-c);
     color: var(--mbbg-c);
 }
+
+/* MORE FEAUTERS */
+
+
 
 /* FOOTER */
 .get-skype {
@@ -81,6 +84,7 @@ ul { list-style: none; }
 }
 .copyright {
     margin-top: 35px;
+    margin-bottom: 35px;
     align-items: flex-end;
     flex-direction: column;
     width:199px;
