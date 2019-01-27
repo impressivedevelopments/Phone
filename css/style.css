@@ -41,8 +41,29 @@ header {
 }
 
 /* MORE FEAUTERS */
+.feauters {
+    text-align: center;
+    height: 100%;
+}
+.scope {
+    justify-content: space-around;
 
+}
+.scope_items {
 
+    flex-direction: column;
+    width:200px;
+
+}
+.more {
+    width:258px;
+    margin-top: 99px;
+    color: var(--mfont-c);
+    width:258px;
+    padding: 20px 20px;
+    font-size: 15px;
+    border-color: var(--b-c) ; 
+}
 
 /* FOOTER */
 .get-skype {
@@ -72,6 +93,9 @@ header {
     background: var(--mbbg-c);
     margin-top: 28px;
     margin-bottom: 60px;
+}
+.footer {
+    margin-top: 84px;
 }
 .footer-container {
 
