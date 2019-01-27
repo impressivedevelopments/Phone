@@ -2,27 +2,27 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', Helvetica, sans-serif;
 }
+a { text-decoration: none; }
+ul { list-style: none; }
+.flex { display: flex; }
+.wrapper { width: 1200px; margin: 0 auto; }
 
+/* HEADER */
 header {
     height: 800px;
     padding-top: 50px;
     position: relative;
     z-index: 1;
 }
-a { text-decoration: none; }
-ul { list-style: none; }
 
-.flex { display: flex; }
-.wrapper { width: 1200px; margin: 0 auto; }
-
-/*Навигация*/
-.main-nav { align-items: center; justify-content: space-around; }
+/* NAVIGATION */
+.main-nav { font-size: 17px; align-items: center; justify-content: space-around; }
 .nav li { margin: 0 15px; }
 .nav li a { color: var(--safont-c); }
 
-/*Кнопки*/
+/* BUTTONS */
 .btn {
     background: transparent;
     border-radius: 70px;
@@ -30,37 +30,63 @@ ul { list-style: none; }
     line-height: 0;
     text-align: center;    
 }
-.lg-btn { width: 250px; height: 50px; }
-.md-btn { width: 225px; height: 45px; }
-.sm-btn { width: 300px; height: 30px; }
-.main-btn {
-    background: var(--mbbg-c);
-    border-color: var(--mbbg-c);
-    color: var(--safont-c);
-    padding: 25px 20px;
-    font-size: 18px;
-    text-transform: uppercase;
-}
-.link-btn { 
-    border-color: var(--mbbg-c); 
-    color: var(--mbbg-c);
-    padding: 12px 40px;
+.lg-btn { width: 250px; height: 50px; font-size: 18px; }
+.link-btn {
+    margin-left: 35px;
     font-size: 15px;
+    padding: 13px 41px;
+    border-color: var(--mbbg-c);
+    color: var(--mbbg-c);
 }
+
+/* MORE FEAUTERS */
+
+
+
+/* FOOTER */
 .get-skype {
+    padding-top: 75px;
     align-items: center;
     flex-direction: column;
-    padding-top: 75px;
-    padding-bottom: 150px;
     color: var(--safont-c);
     position: relative;
     z-index: 1;
+}
+.get-skype span {
+    font-size: 17px;
 }
 .opacity {
     position: absolute;
     top:0;
     width:100%;
     height: 100%;
+    opacity: 0.68;
+    z-index: -1;
+}
+.download {
+    width:258px;
+    padding: 20px 20px;
+    font-size: 15px;
+    color: var(--safont-c);
+    background: var(--mbbg-c);
+    margin-top: 28px;
+    margin-bottom: 60px;
+}
+.footer-container {
+
+    font-size: 13px;
+    justify-content: space-around;
+}
+.privacy {
+    margin-top: 45px;
+    width:649px;
+}
+.copyright {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    align-items: flex-end;
+    flex-direction: column;
+    width:199px;
     opacity: 0.75;
     z-index: -1;
 }
