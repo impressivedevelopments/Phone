@@ -7,6 +7,7 @@
 a { text-decoration: none; }
 ul { list-style: none; }
 .flex { display: flex; }
+.grid { display: grid; }
 .wrapper { width: 1200px; margin: 0 auto; }
 /* HEADER */
 header {
@@ -42,21 +43,28 @@ header {
 
 /* MORE FEAUTERS */
 .feauters {
+    margin-top: 120px;
     text-align: center;
     height: 100%;
 }
+.free { font-size: 38px; }
+.skype_features { font-size: 22px; }
 .scope {
-    justify-content: space-around;
-
+    grid-template-columns: 1fr 1fr 1fr;
 }
 .scope_items {
-
+    justify-content: space-between;
+    padding: 30px 0;
+    align-items: center;
     flex-direction: column;
     width:200px;
-
+    margin:0 auto;
 }
+.scope_items a {
+    color: var(--mfont-c);
+}
+.screen { margin-bottom: 30px;}
 .more {
-    width:258px;
     margin-top: 99px;
     color: var(--mfont-c);
     width:258px;
