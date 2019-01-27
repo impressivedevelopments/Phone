@@ -1,15 +1,38 @@
-* 
-{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.flex
-{
+.flex {
     display: flex;
 }
-.wrapper
-{
+.wrapper {
     width: 1200px;
     margin: 0 auto;
+}
+
+/*Кнопки*/
+.btn {
+    background: transparent;
+    padding: 10px;
+    border-radius: 50%;
+    border-width: 1px solid transparent;
+    line-height: 1.475;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+}
+.lg-btn {
+    width: 100px;
+    height: 50px;
+}
+.md-btn {
+
+}
+.sm-btn {
+    width: 200px;
+    height: 50px;
+}
+.main-btn {
+    background: var(--mbbg-c);
 }
