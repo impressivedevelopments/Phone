@@ -2,47 +2,45 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
-a
-{
-    text-decoration: none;
+
+header {
+    height: 800px;
+    padding-top: 50px;
+    position: relative;
+    z-index: 1;
 }
-.flex
-{
-    display: flex;
-}
-.wrapper {
-    width: 1200px;
-    margin: 0 auto;
-}
+a { text-decoration: none; }
+ul { list-style: none; }
+
+.flex { display: flex; }
+.wrapper { width: 1200px; margin: 0 auto; }
+
+/*Навигация*/
+.main-nav { align-items: center; align-content: space-around; }
+.nav li { margin: 0 15px; }
+.nav li a { color: var(--safont-c); }
 
 /*Кнопки*/
 .btn {
     background: transparent;
-    padding: 10px;
-    border-radius: 50%;
-    border-width: 1px solid transparent;
-    line-height: 1.475;
+    padding: 10px 15px;
+    border-radius: 70px;
+    border: 1px solid transparent;
+    line-height: 0;
     text-align: center;
-    vertical-align: middle;
-    text-decoration: none;
+    text-transform: uppercase;
 }
-.lg-btn {
-    width: 100px;
-    height: 50px;
-}
-.md-btn {
-
-}
-.sm-btn {
-    width: 200px;
-    height: 50px;
-}
+.lg-btn { width: 250px; height: 50px; font-size: 18px; }
+.md-btn { width: 225px; height: 45px; }
+.sm-btn { width: 200px; height: 50px; }
 .main-btn {
     background: var(--mbbg-c);
+    border: var(--mbbg-c);
+    color: var(--safont-c);
 }
-.get-skype
-{
+.get-skype {
     align-items: center;
     flex-direction: column;
     padding-top: 75px;
@@ -51,19 +49,15 @@ a
     position: relative;
     z-index: 1;
 }
-.opacity
-{
+.opacity {
     position: absolute;
     top:0;
     width:100%;
     height: 100%;
-    background: #000;
-    opacity: 0.37;
+    opacity: 0.75;
     z-index: -1;
 }
-.get-skype .lg-btn
-{
-
+.get-skype .lg-btn {
     padding-top: 28px;
 }
 
