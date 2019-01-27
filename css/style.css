@@ -40,7 +40,14 @@ header {
     border-color: var(--mbbg-c);
     color: var(--mbbg-c);
 }
-
+/* Call moblines */
+.mobileskype { background: #f2f6f7;}
+.call { margin-top: 130px; justify-content: space-between; align-items: center;}
+.call_home { width: 400px; margin-bottom: 64px; font-size: 20px;}
+.moblines { flex-direction: column; }
+.moblines img { margin-right: 34px;}
+.text_img { width:388px; font-size: 42px; margin-bottom: 75px; }
+.rates { color: var(--mfont-c); border-color: var(--b-c); width: 185px; padding: 20px 37px}
 /* MORE FEAUTERS */
 .feauters {
     margin-top: 120px;
