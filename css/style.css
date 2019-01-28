@@ -116,12 +116,12 @@ header {
 .evdchat_content img { margin-right: 20px; }
 .evdchat_head { flex-direction: row; align-items: center; }
 .chat { font-size: 2.6em; }
-.stay_close { font-size: 1.25em; margin-top: 50px;} 
+.stay_close { font-size: 1.25em; margin-top: 25px;} 
 
 /* Everything you want to share */
 .everything { background: var(--abg-c); text-align: center;}
 .share { flex-direction: column; align-items: center; }
-.share_icon { padding: 51px 0 28px 0; }
+.share_icon { padding: 30px 0 14px 0; }
 .want_to_share { padding-bottom: 22px; font-size: 2.6em; color: var(--safont-c);}
 .collaboration {  
     padding-bottom: 28px; 
@@ -138,7 +138,7 @@ header {
     justify-content: space-between;
 }
 .call { justify-content: space-between; align-items: flex-end; }
-.call_home { width: 400px; margin-top: 50px; font-size: 1.25em; }
+.call_home { width: 400px; margin: 25px 0; font-size: 1.25em; }
 .moblines { flex-direction: column; margin: auto 0; }
 .moblines img { margin-right: 34px; }
 .mobiles_head {  flex-direction: row; align-items: center; }

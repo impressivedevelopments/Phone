@@ -24,10 +24,13 @@
     .wrapper { padding: 0 25px; }
     .title { padding: 150px 0 50px 0; }
     .big-picture { display: none; }
+    .menu { display: none;}
+    .evdchat_content { margin: 20px auto; }
     .call { justify-content: center; }
     .moblines { margin: 0 auto; }
     .scope { grid-template-columns: 1fr 1fr; }
     .copyright { text-align: right; font-size: .85em; }
+    .rates { margin: 10px auto; }
 }
 /* Смартфон */
 @media screen and (max-width: 500px) {             
@@ -35,19 +38,23 @@
     .wrapper { padding: 0 25px; }
     .title { padding: 150px 0 50px 0; }
     .big-picture { display: none; }
+    .menu { display: none;}
 
-    .evdchat { padding: 50px 0; text-align: center; }
+    .evdchat { margin: 25px 0; text-align: center; }
     .evdchat_head { flex-direction: column; }
     .evdchat_head img { margin: 0; }
 
     .call { justify-content: center; text-align: center; }
-    .mobileskype { padding: 50px 0; }
+    .mobileskype { padding: 25px 0; }
     .moblines { margin: 0 auto; }
     .mobiles_head { flex-direction: column; }
     .mobiles_head img { margin: 0; }
     
     .scope { grid-template-columns: 1fr; }
     .scope_items span { height: auto; }
+    .get-skype span { text-align: center; } 
     .copyright { text-align: right; font-size: .85em; }
     .rates { margin: 0 auto; } 
+
+    
 }
