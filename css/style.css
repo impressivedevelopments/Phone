@@ -40,7 +40,7 @@ header {
 .main-nav { 
     font-size: 17px; 
     align-items: center; 
-    justify-content: space-around; }
+    justify-content: space-between; }
 .nav li { margin: 0 15px; }
 .nav li a { color: var(--safont-c); }
 
@@ -70,15 +70,15 @@ header {
     margin-bottom: 60px;
     text-transform: uppercase
 }
+.rates { color: var(--mfont-c); border-color: var(--b-c); width: 185px; padding: 20px 37px}
 
 /* Call moblines */
-.mobileskype { background: #f2f6f7;}
+.mobileskype { background: #e8ebec;}
 .call { margin-top: 130px; justify-content: space-between; align-items: center;}
 .call_home { width: 400px; margin-bottom: 64px; font-size: 20px;}
 .moblines { flex-direction: column; }
 .moblines img { margin-right: 34px;}
 .text_img { width:388px; font-size: 42px; margin-bottom: 75px; }
-.rates { color: var(--mfont-c); border-color: var(--b-c); width: 185px; padding: 20px 37px}
 
 /* MORE FEAUTERS */
 .feauters {
