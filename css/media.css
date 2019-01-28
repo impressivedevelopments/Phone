@@ -1,0 +1,53 @@
+/* Настольный ПК */
+@media screen and (min-width: 1366px) and (max-width: 1600px) {
+    
+}
+
+/* Ноутбук */
+@media screen and (min-width: 1024px) and (max-width: 1366px) {            
+    
+}
+
+/* Планшет */
+@media screen and (min-width: 800px) and (max-width: 1024px) {            
+    body { font-size: 20px; }
+    .wrapper { padding: 0 50px; }
+    .title { padding: 150px 0 50px 0; }
+    .scope { grid-template-columns: 1fr 1fr; }
+    .big-picture { width: 55%; }    
+    .copyright { text-align: right; font-size: .85em; }
+}
+
+/* Смартфон */
+@media screen and (max-width: 800px) {             
+    body { font-size: 14px; }
+    .wrapper { padding: 0 25px; }
+    .title { padding: 150px 0 50px 0; }
+    .big-picture { display: none; }
+    .call { justify-content: center; }
+    .moblines { margin: 0 auto; }
+    .scope { grid-template-columns: 1fr 1fr; }
+    .copyright { text-align: right; font-size: .85em; }
+}
+/* Смартфон */
+@media screen and (max-width: 500px) {             
+    body { font-size: 14px; }
+    .wrapper { padding: 0 25px; }
+    .title { padding: 150px 0 50px 0; }
+    .big-picture { display: none; }
+
+    .evdchat { padding: 50px 0; text-align: center; }
+    .evdchat_head { flex-direction: column; }
+    .evdchat_head img { margin: 0; }
+
+    .call { justify-content: center; text-align: center; }
+    .mobileskype { padding: 50px 0; }
+    .moblines { margin: 0 auto; }
+    .mobiles_head { flex-direction: column; }
+    .mobiles_head img { margin: 0; }
+    
+    .scope { grid-template-columns: 1fr; }
+    .scope_items span { height: auto; }
+    .copyright { text-align: right; font-size: .85em; }
+    .rates { margin: 0 auto; } 
+}

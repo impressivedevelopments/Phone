@@ -6,8 +6,9 @@
 }
 body { font-size: 16px; }
 a { text-decoration: none; }
-a:active { outline: none;} 
+a:active { outline: none; } 
 ul { list-style: none; }
+h1 { font-size: 2.6em; font-weight: 100; }
 
 .flex { display: flex; }
 .grid { display: grid; }
@@ -52,8 +53,7 @@ header {
     border-radius: 70px;
     border: 1px solid transparent;
     line-height: 0;
-    text-align: center;    
-}
+    text-align: center; }
 .lg-btn { width: 250px; height: 50px; font-size: 18px; }
 .link-btn {
     margin-left: 35px;
@@ -83,7 +83,8 @@ header {
     border: 1px solid var(--mbbg-c);
 }
 .rates { 
-    width: 185px; 
+    width: 185px;
+    margin-top: 50px; 
     padding: 20px 35px;
     color: var(--mfont-c); 
     border-color: var(--b-c);
@@ -113,8 +114,9 @@ header {
 .evdchat { align-items: center; justify-content: space-between;}
 .evdchat_content { width: 370px; flex-direction: column;}
 .evdchat_content img { margin-right: 20px; }
-.chat { font-size: 2.6em; margin-bottom: 30px;}
-.stay_close { font-size: 1.25em; margin-top: 20px;} 
+.evdchat_head { flex-direction: row; align-items: center; }
+.chat { font-size: 2.6em; }
+.stay_close { font-size: 1.25em; margin-top: 50px;} 
 
 /* Everything you want to share */
 .everything { background: var(--abg-c); text-align: center;}
@@ -129,12 +131,17 @@ header {
 }
 
 /* Call mobiles */
-.mobileskype { background: #f2f6f7; padding-top: 100px; }
+.mobileskype { 
+    background: #f2f6f7; 
+    padding-top: 100px;
+    align-items: center; 
+    justify-content: space-between;
+}
 .call { justify-content: space-between; align-items: flex-end; }
-.call_home { width: 400px; margin-bottom: 64px; font-size: 1.25em; }
+.call_home { width: 400px; margin-top: 50px; font-size: 1.25em; }
 .moblines { flex-direction: column; margin: auto 0; }
 .moblines img { margin-right: 34px; }
-.text_img { width:388px; font-size: 2.6em; margin-bottom: 75px; }
+.mobiles_head {  flex-direction: row; align-items: center; }
 
 /* MORE FEAUTERS */
 .feauters {
