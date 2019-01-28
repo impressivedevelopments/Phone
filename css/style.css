@@ -28,7 +28,7 @@ header {
     align-items: center;
     text-align: center;
 }
-.title span { font-size: 2em; margin: 0 0 50px 0;}
+.title span { font-size: 2em; margin: 0 0 50px 0; }
 .icons { 
     width: 200px;
     margin: 50px auto 0;
@@ -42,10 +42,12 @@ header {
 .main-nav { 
     font-size: 17px; 
     align-items: center; 
-    justify-content: space-between; }
+    justify-content: space-between; 
+}
 .nav li { margin: 0 15px; }
 .nav li a { color: #9eb9d6; }
-.nav li a:hover {color: var(--safont-c);}
+.nav li a:hover { color: var(--safont-c); }
+.fa-bars { display: none; }
 
 /* BUTTONS */
 .btn {
@@ -53,7 +55,8 @@ header {
     border-radius: 70px;
     border: 1px solid transparent;
     line-height: 0;
-    text-align: center; }
+    text-align: center; 
+}
 .lg-btn { width: 250px; height: 50px; font-size: 18px; }
 .link-btn {
     margin-left: 35px;
@@ -111,18 +114,22 @@ header {
 }
 
 /* Everyday chat */ 
-.evdchat { align-items: center; justify-content: space-between;}
-.evdchat_content { width: 370px; flex-direction: column;}
+.evdchat { align-items: center; justify-content: space-between; } 
+.evdchat_content { width: 370px; flex-direction: column; }
 .evdchat_content img { margin-right: 20px; }
 .evdchat_head { flex-direction: row; align-items: center; }
 .chat { font-size: 2.6em; }
-.stay_close { font-size: 1.25em; margin-top: 25px;} 
+.stay_close { font-size: 1.25em; margin-top: 25px; } 
 
 /* Everything you want to share */
-.everything { background: var(--abg-c); text-align: center;}
+.everything { background: var(--abg-c); text-align: center; }
 .share { flex-direction: column; align-items: center; }
 .share_icon { padding: 30px 0 14px 0; }
-.want_to_share { padding-bottom: 22px; font-size: 2.6em; color: var(--safont-c);}
+.want_to_share { 
+    padding-bottom: 22px; 
+    font-size: 2.6em; 
+    color: var(--safont-c); 
+}
 .collaboration {  
     padding-bottom: 28px; 
     font-size: 1.25em; 
@@ -150,7 +157,7 @@ header {
     height: 100%;
 }
 .free { font-size: 2.6em; }
-.skype_features { display: block; font-size: 1.25em; margin-bottom: 50px;}
+.skype_features { display: block; font-size: 1.25em; margin-bottom: 50px; }
 .scope { grid-template-columns: 1fr 1fr 1fr; }
 .scope_items {
     padding: 30px 0;

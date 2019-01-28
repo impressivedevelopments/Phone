@@ -5,14 +5,15 @@
 
 /* Ноутбук */
 @media screen and (min-width: 1024px) and (max-width: 1366px) {            
-    
+    .wrapper { padding: 0 50px; }
+    .title { padding: 150px 0 50px 0; font-size: .7em; }
 }
 
 /* Планшет */
 @media screen and (min-width: 800px) and (max-width: 1024px) {            
     body { font-size: 20px; }
     .wrapper { padding: 0 50px; }
-    .title { padding: 150px 0 50px 0; }
+    .title { padding: 150px 0 50px 0; font-size: .7em; }
     .scope { grid-template-columns: 1fr 1fr; }
     .big-picture { width: 55%; }    
     .copyright { text-align: right; font-size: .85em; }
@@ -22,9 +23,10 @@
 @media screen and (max-width: 800px) {             
     body { font-size: 14px; }
     .wrapper { padding: 0 25px; }
-    .title { padding: 150px 0 50px 0; }
+    .title { padding: 150px 0 50px 0; font-size: .95em; }
     .big-picture { display: none; }
-    .menu { display: none;}
+    .menu { display: none; }
+    .fa-bars { display: block; color: var(--mbg-c); cursor: pointer; }
     .evdchat_content { margin: 20px auto; }
     .call { justify-content: center; }
     .moblines { margin: 0 auto; }
@@ -38,23 +40,20 @@
     .wrapper { padding: 0 25px; }
     .title { padding: 150px 0 50px 0; }
     .big-picture { display: none; }
-    .menu { display: none;}
-
+    .menu { display: none; }
+    .fa-bars { display: block; color: var(--mbg-c); cursor: pointer; }
     .evdchat { margin: 25px 0; text-align: center; }
     .evdchat_head { flex-direction: column; }
     .evdchat_head img { margin: 0; }
-
     .call { justify-content: center; text-align: center; }
     .mobileskype { padding: 25px 0; }
     .moblines { margin: 0 auto; }
     .mobiles_head { flex-direction: column; }
     .mobiles_head img { margin: 0; }
-    
     .scope { grid-template-columns: 1fr; }
     .scope_items span { height: auto; }
     .get-skype span { text-align: center; } 
     .copyright { text-align: right; font-size: .85em; }
     .rates { margin: 0 auto; } 
-
-    
+  
 }
