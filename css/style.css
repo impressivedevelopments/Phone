@@ -13,6 +13,7 @@ h1 { font-size: 2.6em; font-weight: 100; }
 .flex { display: flex; }
 .grid { display: grid; }
 .wrapper { max-width: 1200px; margin: 0 auto; }
+.hidden { display: none; }
 
 /* HEADER */
 header {
@@ -48,6 +49,17 @@ header {
 .nav li a { color: #9eb9d6; }
 .nav li a:hover { color: var(--safont-c); }
 .fa-bars { display: none; }
+.gamburger-menu {
+    display: none;
+    align-items: flex-end;
+    flex-direction: column;
+    position: relative; 
+}
+.gamburger-menu .gamburger-nav { position: absolute; top: 40px; }
+.gamburger-menu .gamburger-nav li { margin: 4px 0; }
+.gamburger-menu .gamburger-nav li .link-btn { padding: 0; margin: 0; } 
+.gamburger-nav li a { color: #9eb9d6; }
+.gamburger-li a:hover { color: var(--safont-c); }
 
 /* BUTTONS */
 .btn {

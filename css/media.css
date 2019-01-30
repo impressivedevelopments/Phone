@@ -26,6 +26,7 @@
     .title { padding: 150px 0 50px 0; font-size: .95em; }
     .big-picture { display: none; }
     .menu { display: none; }
+    .gamburger-menu { display: block; }
     .fa-bars { display: block; color: var(--mbg-c); cursor: pointer; }
     .evdchat_content { margin: 20px auto; }
     .call { justify-content: center; }
@@ -38,22 +39,24 @@
 @media screen and (max-width: 500px) {             
     body { font-size: 14px; }
     .wrapper { padding: 0 25px; }
-    .title { padding: 150px 0 50px 0; }
+    .title { padding: 200px 0 50px 0; font-size: .8em;}
     .big-picture { display: none; }
     .menu { display: none; }
+    .gamburger-menu { display: flex; }
+    .gamburger-nav { flex-direction: column; text-align: right; }
     .fa-bars { display: block; color: var(--mbg-c); cursor: pointer; }
     .evdchat { margin: 25px 0; text-align: center; }
     .evdchat_head { flex-direction: column; }
-    .evdchat_head img { margin: 0; }
+    .evdchat_head img { margin: 0; }    
     .call { justify-content: center; text-align: center; }
     .mobileskype { padding: 25px 0; }
     .moblines { margin: 0 auto; }
     .mobiles_head { flex-direction: column; }
-    .mobiles_head img { margin: 0; }
+    .mobiles_head img { margin: 0; }    
     .scope { grid-template-columns: 1fr; }
     .scope_items span { height: auto; }
     .get-skype span { text-align: center; } 
     .copyright { text-align: right; font-size: .85em; }
     .rates { margin: 0 auto; } 
-  
+
 }
