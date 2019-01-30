@@ -26,7 +26,7 @@
                         <li><a href="#" class="link nav-item">Prices</a></li>
                         <li><a href="#" class="link nav-item">Help</a></li>                
                     </ul>
-                    <span><a href="#" class="btn sm-btn link-btn">Sign in</a></span>          
+                    <span><a href="#" class="btn sm-btn link-btn" onclick="sign_up_open()">Sign in</a></span>          
                 </nav>
                 <!-- HAMBURGER-MENU -->
                 <nav class="flex hamburger-menu">
@@ -184,27 +184,35 @@
         </div>
     </footer>
     <!-- SING-UP -->
-    <div class="sign-up_window wrapper flex ">
+    <div class="sign-up_window wrapper flex hidden">
         <div class="sign-up_header flex">
-          <img src="images/logo.png" alt="logo">
-          <i class="fas fa-times fa-2x"></i>
-      </div>
-      <div class="sign-up_info flex">
-        <div class="sign-up_create_member flex">
-            <label>Логин:</label>
-            <input type="text">
+            <img src="images/logo.png" alt="logo">
+            <i class="fas fa-times fa-2x" onclick="sign_up_close()"></i>
         </div>
-        <div class="sign-up_create_member flex">
-            <label>Пароль:</label>
-            <input type="password">
+        <div class="sign-up_info flex">
+            <div class="sign-up_create_member grid" id="login">
+                <label>Логин:</label>
+                <input type="text" placeholder="Ваш логин" required>
+            </div>
+            <div class="sign-up_create_member grid hidden" id="e-mail">
+                <label>E-mail:</label>
+                <input type="e-mail" placeholder="Ваш e-mail" required>
+            </div>
+            <div class="sign-up_create_member grid" id="password">
+                <label>Пароль:</label>
+                <input type="password" placeholder="Ваш пароль" required>
+            </div>
+            <div class="sign-up_create_member grid hidden" id="confirm_password">
+                <label>Подтвердите пароль:</label>
+                <input type="password" placeholder="Ваш пароль" required>
+            </div>
         </div>
-      </div>
-      <div class="sign-up_button_container flex">
-            <a href="#" class="sign-up_button">Войти</a>
-      </div>
-      <div class="sign-up_registration">
-            <a href="#">Ещё не зарегистрированы?</a>
-      </div>
+        <div class="sign-up_button_container flex">
+            <button class="sign-up_button">Войти</button>
+        </div>
+        <div class="sign-in">
+            <a href="#" onclick="sign_in_show()">Ещё не зарегистрированы?</a>
+        </div>
     </div>
 
     <script src="js/script.js"></script>

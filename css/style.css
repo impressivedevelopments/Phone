@@ -9,6 +9,16 @@ a { text-decoration: none; }
 a:active { outline: none; } 
 ul { list-style: none; }
 h1 { font-size: 2.6em; font-weight: 100; }
+button { border: none; outline: none; border: 1px solid transparent; }
+input {
+    background: transparent; 
+    width: 225px;
+    padding: 20px 15px;
+    color: var(--afont-c); 
+    border: 1px solid var(--b-c);
+    border-radius: 7px;
+}
+input::placeholder { text-transform: uppercase; }
 
 .flex { display: flex; }
 .grid { display: grid; }
@@ -32,7 +42,7 @@ header {
 .title span { font-size: 2em; margin: 0 0 50px 0; }
 .icons { 
     width: 200px;
-    margin: 50px auho 0;
+    margin: 50px auto 0;
     font-size: 1em; 
     align-items: center; 
     justify-content: space-between;
@@ -217,31 +227,34 @@ header {
 /* SIGN-UP */
 
 .sign-up_window {
-    position: absolute;
+    position: fixed;
     top: 20%;
-    bottom: 0;
     left: 0;
     right: 0;
     z-index: 9999;
     flex-direction: column;
     padding: 25px 50px;
-    background: grey;
+    background: var(--mbg-c);
     margin: 0 auto;
     width: 650px;
     border-radius: 10px;
-    height: 370px;
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.5);
 }
 .sign-up_info { flex-direction: column; align-items: center;  }
 .sign-up_header { justify-content: space-between; margin-bottom: 45px; align-items: center;}
-.fa-times { color: #9eb9d6; }
-.fa-times:hover { color: var(--safont-c); cursor:pointer; }
+.fa-times { color: var(--mfont-c); }
+.fa-times:hover { color: var(--afont-c); cursor:pointer;  transition: .5s ease;}
 .sign-up_info { width: 300px; margin: 0 auto; justify-content: space-between; } 
 .sign-up_create_member {    
-    flex-direction: row;
+    grid-template-columns: 200px 250px;    
     margin-bottom: 25px;
     line-height: 25px; 
 }
-.sign-up_create_member label { text-transform: uppercase; }
+.sign-up_create_member label { 
+    text-transform: uppercase; 
+    text-align: right;
+    line-height: 42px;
+}
 .sign-up_create_member input { height: 25px; outline: none; width: 200px; margin-left: 10px;}
 .sign-up_button_container { margin: 0 auto; }
 .sign-up_button  { 
@@ -251,9 +264,16 @@ header {
     width: 220px;
     margin: 28px 0 30px 0;
     padding: 20px 0;
-    background: #7fba00;
+    background: var(--mbbg-c);
+    color: var(--safont-c);
     text-transform: uppercase;
 }
-.sign-up_button_container a { color: #fff; font-size: 1em; }
-.sign-up_registration { text-align: center; }
-.sign-up_registration a {color: #fff;}
+.sign-up_button:hover { 
+    background: transparent; 
+    color: var(--mbbg-c); 
+    transition: .5s ease;
+    border: 1px solid var(--mbbg-c);
+}
+.sign-up_button_container a { color: var(--safont-c); font-size: 1em; }
+.sign-in { text-align: center; }
+.sign-in a {color: var(--afont-c);}
