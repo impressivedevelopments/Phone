@@ -1,16 +1,9 @@
 var hamburger_menu = function() {
     var hamburger = document.querySelector(".fas");
-    var menu = document.querySelector(".gamburger-nav");
-    
-    if (menu.style.display == "none") {
-        hamburger.addEventListener("click", function(){
-            menu.style.display = "inherit";
-        });
+    var menu = document.querySelector(".hamburger-nav");
+    if (menu.classList.contains("hidden")) {
+            menu.classList.remove("hidden");   
     } else {
-        hamburger.addEventListener("click", function(){
-            menu.style.display = "none";
-        });
+            menu.classList.add("hidden");
     }
-    
-    
 };

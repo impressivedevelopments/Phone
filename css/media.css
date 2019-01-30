@@ -23,10 +23,12 @@
 @media screen and (max-width: 800px) {             
     body { font-size: 14px; }
     .wrapper { padding: 0 25px; }
-    .title { padding: 150px 0 50px 0; font-size: .95em; }
+    .title { padding: 200px 0 50px 0; font-size: .8em; }
     .big-picture { display: none; }
     .menu { display: none; }
-    .gamburger-menu { display: block; }
+    .hamburger-menu { display: flex; }
+    .hamburger-nav { flex-direction: column; text-align: right; }
+    .link-btn:hover { background: transparent; color: #9eb9d6 }
     .fa-bars { display: block; color: var(--mbg-c); cursor: pointer; }
     .evdchat_content { margin: 20px auto; }
     .call { justify-content: center; }
@@ -42,8 +44,9 @@
     .title { padding: 200px 0 50px 0; font-size: .8em;}
     .big-picture { display: none; }
     .menu { display: none; }
-    .gamburger-menu { display: flex; }
-    .gamburger-nav { flex-direction: column; text-align: right; }
+    .hamburger-menu { display: flex; }
+    .hamburger-nav { flex-direction: column; text-align: right; }
+    .link-btn:hover { background: transparent; color: #9eb9d6 }
     .fa-bars { display: block; color: var(--mbg-c); cursor: pointer; }
     .evdchat { margin: 25px 0; text-align: center; }
     .evdchat_head { flex-direction: column; }
