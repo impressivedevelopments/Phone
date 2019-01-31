@@ -39,21 +39,27 @@
     .copyright { text-align: right; font-size: .85em; }
     .rates { margin: 10px auto; }
     .popup_header { justify-content: space-between; margin-bottom: 5px; align-items: center; }
-    .popup_info { width: auto; margin: 0 auto; flex-direction: row; }
-    .popup_window { 
+    .popup_info { width: auto; margin: 0 auto; flex-direction: column; }
+    .popup_header img { display: none; }
+    .fa-times { position: absolute; right: 0; margin: 15px; }
+    .popup_window {
         position: fixed;
         top: 10%;
         left: 0;
         right: 0;
         z-index: 9999;
         flex-direction: column;
-        padding: 25px 30px;
+        padding: 3px 30px;
         background: var(--mbg-c);
-        margin: 0 auto;
+        margin: -18px auto;
         width: 500px;
         border-radius: 10px;
         box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
     }
+    .popup_button_container {
+        margin: -20px auto;
+    }
+    .popup_create_member input { height: 25px; }
 }
 /* Смартфон */
 @media screen and (max-width: 500px) {             

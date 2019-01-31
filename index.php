@@ -271,17 +271,17 @@
             <i class="fas fa-times fa-2x" onclick="popup_close()"></i>
         </div>
         <div class="popup_info flex">
-            <div class="popup_create_member grid" id="member_login">
+            <div class="popup_create_member" id="member_login">
                 <input type="text" placeholder="Ваш логин" name="login" required>
             </div>
             <div class="error"><?= $errors['login'] ?></div>
-            <div class="popup_create_member grid" id="member_email">
+            <div class="popup_create_member" id="member_email">
                 <input type="e-mail" placeholder="Ваш e-mail" name="email" required>
             </div>
-            <div class="popup_create_member grid" id="member_password">
+            <div class="popup_create_member" id="member_password">
                 <input type="password" placeholder="Ваш пароль" name="password" required>
             </div>
-            <div class="popup_create_member grid" id="member_confirm_password">
+            <div class="popup_create_member" id="member_confirm_password">
                 <input type="password" placeholder="Ваш пароль" name="confirm_password" required>
             </div>
         </div>
