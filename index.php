@@ -1,9 +1,3 @@
-<?
-    $integer = 120;
-    $str = 'Санька лучший кодер!';
-    echo $integer;
-    echo $str;
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,7 +26,7 @@
                         <li><a href="#" class="link nav-item">Prices</a></li>
                         <li><a href="#" class="link nav-item">Help</a></li>                
                     </ul>
-                    <span><a href="#" class="btn sm-btn link-btn" onclick="sign_up_open()">Sign in</a></span>          
+                    <span><a href="#" class="btn sm-btn link-btn" onclick="sign_in_open()">Sign in</a></span>          
                 </nav>
                 <!-- HAMBURGER-MENU -->
                 <nav class="flex hamburger-menu">
@@ -110,7 +104,7 @@
     <!-- MORE FEAUTERS -->
     <section class="feauters wrapper">
         <h1>Free calls and so much more with Skype</h1>
-        </br>
+        <br>
         <span class="skype_features">Check out what you can do with Skype</span>
         <div class="scope grid">
             <div class="scope_items flex">
@@ -189,38 +183,64 @@
             </div>
         </div>
     </footer>
+
     <!-- SING-UP -->
-    <div class="sign-up_window wrapper flex hidden">
-        <div class="sign-up_header flex">
+    <form method="post" action="scripts/php/register.php" id="sign_up" class="popup_window wrapper flex hidden">
+        <div class="popup_header flex">
             <img src="images/logo.png" alt="logo">
-            <i class="fas fa-times fa-2x" onclick="sign_up_close()"></i>
+            <i class="fas fa-times fa-2x" onclick="popup_close()"></i>
         </div>
-        <div class="sign-up_info flex">
-            <div class="sign-up_create_member grid" id="login">
+        <div class="popup_info flex">
+            <div class="popup_create_member grid" id="member_login">
                 <label>Логин:</label>
-                <input type="text" placeholder="Ваш логин" required>
+                <input type="text" placeholder="Ваш логин" name="login" required>
             </div>
-            <div class="sign-up_create_member grid hidden" id="e-mail">
+            <div class="error"><?= $errors['login'] ?></div>
+            <div class="popup_create_member grid" id="member_email">
                 <label>E-mail:</label>
-                <input type="e-mail" placeholder="Ваш e-mail" required>
+                <input type="e-mail" placeholder="Ваш e-mail" name="email" required>
             </div>
-            <div class="sign-up_create_member grid" id="password">
+            <div class="popup_create_member grid" id="member_password">
                 <label>Пароль:</label>
-                <input type="password" placeholder="Ваш пароль" required>
+                <input type="password" placeholder="Ваш пароль" name="password" required>
             </div>
-            <div class="sign-up_create_member grid hidden" id="confirm_password">
+            <div class="popup_create_member grid" id="member_confirm_password">
                 <label>Подтвердите пароль:</label>
-                <input type="password" placeholder="Ваш пароль" required>
+                <input type="password" placeholder="Ваш пароль" name="confirm_password" required>
             </div>
         </div>
-        <div class="sign-up_button_container flex">
-            <button class="sign-up_button">Войти</button>
+        <div class="popup_button_container flex">
+            <button class="popup_button">Зарегистрироваться</button>
         </div>
         <div class="sign-in">
-            <a href="#" onclick="sign_in_show()">Ещё не зарегистрированы?</a>
+            <a href="#" onclick="sign_in_open()">Ещё не зарегистрированы?</a>
         </div>
-    </div>
+    </form>
 
-    <script src="js/script.js"></script>
+    <!-- SING-IN -->
+    <form method="post" action="scripts/php/auth.php" id="sign_in" class="popup_window wrapper flex hidden">
+        <div class="popup_header flex">
+            <img src="images/logo.png" alt="logo">
+            <i class="fas fa-times fa-2x" onclick="popup_close()"></i>
+        </div>
+        <div class="popup_info flex">
+            <div class="popup_create_member grid" id="member_login">
+                <label>Логин:</label>
+                <input type="text" placeholder="Ваш логин" name="login" required>
+            </div>            
+            <div class="popup_create_member grid" id="member_password">
+                <label>Пароль:</label>
+                <input type="password" placeholder="Ваш пароль" name="password" required>
+            </div>            
+        </div>
+        <div class="popup_button_container flex">
+            <button class="popup_button">Войти</button>
+        </div>
+        <div class="sign-in">
+            <a href="#" onclick="sign_up_open()">Есть аккаунт?</a>
+        </div>
+    </form>
+
+    <script src="scripts/js/script.js"></script>
 </body>
 </html>

@@ -226,7 +226,7 @@ header {
 
 /* SIGN-UP */
 
-.sign-up_window {
+.popup_window {
     position: fixed;
     top: 20%;
     left: 0;
@@ -238,26 +238,26 @@ header {
     margin: 0 auto;
     width: 650px;
     border-radius: 10px;
-    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
 }
-.sign-up_info { flex-direction: column; align-items: center;  }
-.sign-up_header { justify-content: space-between; margin-bottom: 45px; align-items: center;}
+.popup_info { flex-direction: column; align-items: center;  }
+.popup_header { justify-content: space-between; margin-bottom: 45px; align-items: center;}
 .fa-times { color: var(--mfont-c); }
 .fa-times:hover { color: var(--afont-c); cursor:pointer;  transition: .5s ease;}
-.sign-up_info { width: 300px; margin: 0 auto; justify-content: space-between; } 
-.sign-up_create_member {    
+.popup_info { width: 300px; margin: 0 auto; justify-content: space-between; } 
+.popup_create_member {    
     grid-template-columns: 200px 250px;    
     margin-bottom: 25px;
     line-height: 25px; 
 }
-.sign-up_create_member label { 
+.popup_create_member label { 
     text-transform: uppercase; 
     text-align: right;
     line-height: 42px;
 }
-.sign-up_create_member input { height: 25px; outline: none; width: 200px; margin-left: 10px;}
-.sign-up_button_container { margin: 0 auto; }
-.sign-up_button  { 
+.popup_create_member input { height: 25px; outline: none; width: 200px; margin-left: 10px;}
+.popup_button_container { margin: 0 auto; }
+.popup_button  { 
     line-height: 0;
     border-radius: 70px;
     text-align: center;
@@ -268,12 +268,12 @@ header {
     color: var(--safont-c);
     text-transform: uppercase;
 }
-.sign-up_button:hover { 
+.popup_button:hover { 
     background: transparent; 
     color: var(--mbbg-c); 
     transition: .5s ease;
     border: 1px solid var(--mbbg-c);
 }
-.sign-up_button_container a { color: var(--safont-c); font-size: 1em; }
+.popup_button_container a { color: var(--safont-c); font-size: 1em; }
 .sign-in { text-align: center; }
 .sign-in a {color: var(--afont-c);}
