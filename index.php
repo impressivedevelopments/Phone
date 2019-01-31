@@ -289,7 +289,7 @@
             <button class="popup_button">Зарегистрироваться</button>
         </div>
         <div class="sign-in">
-            <a href="#" onclick="mini_sign_in_open()">Уже есть аккаун?</a>
+            <a href="#" onclick="mini_sign_in_open()">Уже есть аккаунт?</a>
         </div>
     </form>
 
