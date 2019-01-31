@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,8 +29,19 @@
                         <li><a href="#" class="link nav-item">Prices</a></li>
                         <li><a href="#" class="link nav-item">Help</a></li>                
                     </ul>
-                    <span><a href="#" class="btn sm-btn link-btn" onclick="sign_in_open()">Sign in</a></span>          
+                    <?php
+                    if(!empty($_SESSION['login'])) {
+                        echo '
+                        <form action="scripts/php/log_out.php">
+                            <button class="link user">'.'Привет, '. $_SESSION['login']. '
+                            </button>
+                        </form>';
+                    } else {
+                        echo '<span><a href="#" class="btn sm-btn link-btn" onclick="sign_in_open()">Sign in</a></span>';
+                    }
+                    ?>
                 </nav>
+
                 <!-- HAMBURGER-MENU -->
                 <nav class="flex hamburger-menu">
                     <i class="fas fa-bars fa-2x" onclick="hamburger_menu()"></i>
