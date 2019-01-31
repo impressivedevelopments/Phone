@@ -7,6 +7,7 @@
 @media screen and (min-width: 1024px) and (max-width: 1366px) {            
     .wrapper { padding: 0 50px; }
     .title { padding: 150px 0 50px 0; font-size: .7em; }
+    .popup_window { padding: 25px 50px; width: 550px; }
 }
 
 /* Планшет */
@@ -14,13 +15,14 @@
     body { font-size: 20px; }
     .wrapper { padding: 0 50px; }
     .title { padding: 150px 0 50px 0; font-size: .7em; }
+    .popup_window { padding: 25px 50px; width: 550px; }
     .scope { grid-template-columns: 1fr 1fr; }
     .big-picture { width: 55%; }    
     .copyright { text-align: right; font-size: .85em; }
 }
 
 /* Смартфон */
-@media screen and (max-width: 800px) {             
+@media screen and (max-width: 825px) {             
     body { font-size: 14px; }
     .wrapper { padding: 0 25px; }
     .title { padding: 200px 0 50px 0; font-size: .8em; }
@@ -36,6 +38,22 @@
     .scope { grid-template-columns: 1fr 1fr; }
     .copyright { text-align: right; font-size: .85em; }
     .rates { margin: 10px auto; }
+    .popup_header { justify-content: space-between; margin-bottom: 5px; align-items: center; }
+    .popup_info { width: auto; margin: 0 auto; flex-direction: row; }
+    .popup_window { 
+        position: fixed;
+        top: 10%;
+        left: 0;
+        right: 0;
+        z-index: 9999;
+        flex-direction: column;
+        padding: 25px 30px;
+        background: var(--mbg-c);
+        margin: 0 auto;
+        width: 500px;
+        border-radius: 10px;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+    }
 }
 /* Смартфон */
 @media screen and (max-width: 500px) {             
@@ -61,5 +79,22 @@
     .get-skype span { text-align: center; } 
     .copyright { text-align: right; font-size: .85em; }
     .rates { margin: 0 auto; } 
-
+    .popup_header { justify-content: space-between; margin-bottom: 5px; align-items: center; }
+    .popup_header img { display: none; }
+    .fa-times { position: absolute; right: 0; margin: 15px; }
+    .popup_info { margin: 0 auto; flex-direction: column; }
+    .popup_window { 
+        position: fixed;
+        top: 10%;
+        left: 0;
+        right: 0;
+        z-index: 9999;
+        flex-direction: column;
+        padding: 25px 30px;
+        background: var(--mbg-c);
+        margin: 0 auto;
+        width: 320px;
+        border-radius: 10px;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+    }
 }

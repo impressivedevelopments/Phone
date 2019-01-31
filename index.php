@@ -32,9 +32,8 @@
                     <?php
                     if(!empty($_SESSION['login'])) {
                         echo '
-                        <form action="scripts/php/log_out.php">
-                            <button class="link user">'.'Привет, '. $_SESSION['login']. '
-                            </button>
+                        <form action="scripts/php/log_out.php" class ="flex">
+                        <i class="fas fa-user-circle fa-2x"></i><button class="link user">'.'Привет, '. $_SESSION['login']. '</button>
                         </form>';
                     } else {
                         echo '<span><a href="#" class="btn sm-btn link-btn" onclick="sign_in_open()">Sign in</a></span>';
@@ -50,7 +49,17 @@
                         <li><a href="#" class="link nav-item">Business</a></li>
                         <li><a href="#" class="link nav-item">Prices</a></li>
                         <li><a href="#" class="link nav-item">Help</a></li> 
-                        <li><a href="#" class="sm-btn link-btn">Sign in</a></li>               
+                        <?php
+                    if(!empty($_SESSION['login'])) {
+                        echo '
+                        <form action="scripts/php/log_out.php" class ="flex">
+                        <button class="link user">'. $_SESSION['login']. '</button>
+                        </form>';
+                    } else {
+                        echo '<li><a href="#" class="sm-btn link-btn" onclick="mini_sign_in_open()">Sign in</a></li> ';
+                    }
+                    ?>
+                                      
                     </ul>                              
                 </nav>
             </div>
@@ -227,7 +236,7 @@
             <button class="popup_button">Зарегистрироваться</button>
         </div>
         <div class="sign-in">
-            <a href="#" onclick="sign_in_open()">Ещё не зарегистрированы?</a>
+            <a href="#" onclick="sign_in_open()">Уже есть аккаун?</a>
         </div>
     </form>
 
@@ -251,7 +260,58 @@
             <button class="popup_button">Войти</button>
         </div>
         <div class="sign-in">
-            <a href="#" onclick="sign_up_open()">Есть аккаунт?</a>
+            <a href="#" onclick="sign_up_open()">Ещё не зарегистрированы?</a>
+        </div>
+    </form>
+
+    <!-- SING-UP MINI -->
+    <form method="post" action="scripts/php/register.php" id="mini-sign_up" class="popup_window wrapper flex hidden">
+        <div class="popup_header flex">
+            <img src="images/logo.png" alt="logo">
+            <i class="fas fa-times fa-2x" onclick="popup_close()"></i>
+        </div>
+        <div class="popup_info flex">
+            <div class="popup_create_member grid" id="member_login">
+                <input type="text" placeholder="Ваш логин" name="login" required>
+            </div>
+            <div class="error"><?= $errors['login'] ?></div>
+            <div class="popup_create_member grid" id="member_email">
+                <input type="e-mail" placeholder="Ваш e-mail" name="email" required>
+            </div>
+            <div class="popup_create_member grid" id="member_password">
+                <input type="password" placeholder="Ваш пароль" name="password" required>
+            </div>
+            <div class="popup_create_member grid" id="member_confirm_password">
+                <input type="password" placeholder="Ваш пароль" name="confirm_password" required>
+            </div>
+        </div>
+        <div class="popup_button_container flex">
+            <button class="popup_button">Зарегистрироваться</button>
+        </div>
+        <div class="sign-in">
+            <a href="#" onclick="mini_sign_in_open()">Уже есть аккаун?</a>
+        </div>
+    </form>
+
+    <!-- SIGN-IN MINI -->
+    <form method="post" action="scripts/php/auth.php" id="mini-sign_in" class="popup_window wrapper flex hidden">
+        <div class="popup_header flex">
+            <img src="images/logo.png" alt="logo">
+            <i class="fas fa-times fa-2x" onclick="popup_close()"></i>
+        </div>
+        <div class="popup_info flex">
+            <div class="popup_create_member" id="member_login">
+                <input type="text" placeholder="Ваш логин" name="login" required>
+            </div>            
+            <div class="popup_create_member" id="member_password">
+                <input type="password" placeholder="Ваш пароль" name="password" required>
+            </div>            
+        </div>
+        <div class="popup_button_container flex">
+            <button class="popup_button">Войти</button>
+        </div>  
+        <div class="sign-in">
+            <a href="#" onclick="mini_sign_up_open()">Ещё не зарегистрированы?</a>
         </div>
     </form>
 

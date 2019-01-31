@@ -32,6 +32,14 @@ header {
     position: relative;
     z-index: 1;
 }
+.fa-user-circle { color:#fff; margin-left: 10px; }
+.user { 
+    margin-left: 5px;
+    background: transparent; 
+    font-size: 1em;
+    cursor: pointer;
+    color: var(--mbbg-c);
+}
 .title {
     padding: 150px 0 50px 0;
     color: var(--safont-c);
@@ -51,6 +59,7 @@ header {
 
 /* NAVIGATION */
 .main-nav { 
+    line-height: 34px;
     font-size: 17px; 
     align-items: center; 
     justify-content: space-between; 
@@ -277,4 +286,3 @@ header {
 .popup_button_container a { color: var(--safont-c); font-size: 1em; }
 .sign-in { text-align: center; }
 .sign-in a { color: var(--afont-c); }
-.user { color: var(--safont-c); margin-left: 20px; }
