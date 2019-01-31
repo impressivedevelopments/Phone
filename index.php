@@ -1,3 +1,9 @@
+<?
+    $integer = 120;
+    $str = 'Санька лучший кодер!';
+    echo $integer;
+    echo $str;
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
