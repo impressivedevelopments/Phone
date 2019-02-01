@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Open Sans', Helvetica, sans-serif;
 }
+html { font-size: 0; }
 body { font-size: 16px; }
 a { text-decoration: none; }
 a:active { outline: none; } 
@@ -292,10 +293,20 @@ header {
 .sign-in { text-align: center; }
 .sign-in a { color: var(--afont-c); }
 
-.parallax {
-    position: fixed;
-}
 .top {
-    top: 20%;
+    position: absolute;
     right: 5%;
+}
+.left {
+    position: absolute;
+    left: 10%;
+}
+.bottom {
+    position: absolute;
+    right: 25%;
+}
+.middle {
+    position: absolute;
+    left: 25%;
+    margin-top: -5em;
 }

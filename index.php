@@ -81,6 +81,9 @@
                 </div>
             </div>
         </div>
+        <img src="images/cloud.png" alt="cloud" width="1125px" class="rellax middle" data-rellax-speed="6">
+        <img src="images/cloud.png" alt="cloud" width="800px" class="rellax top" data-rellax-speed="4">
+        <img src="images/cloud.png" alt="cloud" width="650px" class="rellax left" data-rellax-speed="3">
     </header>
 
     <!-- Everyday chat -->
@@ -315,8 +318,11 @@
         </div>
     </form>
 
-    <img src="images/cloud.png" alt="cloud" class="parallax top">
-
     <script src="scripts/js/script.js"></script>
+    <script src="scripts/js/rellax.min.js"></script>
+    <script>
+    // Accepts any class name
+    var rellax = new Rellax('.rellax');
+    </script>
 </body>
 </html>

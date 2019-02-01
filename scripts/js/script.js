@@ -37,5 +37,3 @@ var popup_close = function() {
     mini_sign_in.classList.add("hidden");
 
 };
-
-
