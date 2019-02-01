@@ -291,3 +291,11 @@ header {
 .popup_button_container a { color: var(--safont-c); font-size: 1em; }
 .sign-in { text-align: center; }
 .sign-in a { color: var(--afont-c); }
+
+.parallax {
+    position: fixed;
+}
+.top {
+    top: 20%;
+    right: 5%;
+}

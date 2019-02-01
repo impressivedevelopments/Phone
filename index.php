@@ -315,6 +315,8 @@
         </div>
     </form>
 
+    <img src="images/cloud.png" alt="cloud" class="parallax top">
+
     <script src="scripts/js/script.js"></script>
 </body>
 </html>
